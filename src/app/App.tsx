@@ -95,7 +95,7 @@ function CoverPage({ onOpen }: { onOpen: () => void }) {
 function PhotoPage({ onNext }: { onNext: () => void }) {
   const [photos, setPhotos] = useLocalStorage<string[]>(
   "love-photos",
-  ["/photos/main.jpg.jpeg"]
+  ["/photos/main.jpg"]
 );
   const [current, setCurrent] = useState(0);
   const fileRef = useRef<HTMLInputElement>(null);
@@ -476,117 +476,117 @@ function MemoriesPage() {
   [
     {
       type: "photo",
-      src: "/photos/pic1.jpg.jpeg",
+      src: "/photos/pic1.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic2.jpg.jpeg",
+      src: "/photos/pic2.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic3.jpg.jpeg",
+      src: "/photos/pic3.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic4.jpg.jpeg",
+      src: "/photos/pic4.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic5.jpg.jpeg",
+      src: "/photos/pic5.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic6.jpg.jpeg",
+      src: "/photos/pic6.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic7.jpg.jpeg",
+      src: "/photos/pic7.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic8.jpg.jpeg",
+      src: "/photos/pic8.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic9.jpg.jpeg",
+      src: "/photos/pic9.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic10.jpg.jpeg",
+      src: "/photos/pic10.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic11.jpg.jpeg",
+      src: "/photos/pic11.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic12.jpg.jpeg",
+      src: "/photos/pic12.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic13.jpg.jpeg",
+      src: "/photos/pic13.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic14.jpg.jpeg",
+      src: "/photos/pic14.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic15.jpg.jpeg",
+      src: "/photos/pic15.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic16.jpg.jpeg",
+      src: "/photos/pic16.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic17.jpg.jpeg",
+      src: "/photos/pic17.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic18.jpg.jpeg",
+      src: "/photos/pic18.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic19.jpg.jpeg",
+      src: "/photos/pic19.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic20.jpg.jpeg",
+      src: "/photos/pic20.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic21.jpg.jpeg",
+      src: "/photos/pic21.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic22.jpg.jpeg",
+      src: "/photos/pic22.jpg",
       caption: "♥",
     },
     {
       type: "photo",
-      src: "/photos/pic23.jpg.jpeg",
+      src: "/photos/pic23.jpg",
       caption: "♥",
     }
   ]
