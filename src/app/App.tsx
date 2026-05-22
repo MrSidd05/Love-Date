@@ -93,7 +93,10 @@ function CoverPage({ onOpen }: { onOpen: () => void }) {
 
 /* ══════════════════════════ PAGE 2 – PHOTOS ══════════════════════════ */
 function PhotoPage({ onNext }: { onNext: () => void }) {
-  const [photos, setPhotos] = useLocalStorage<string[]>("love-photos", []);
+  const [photos, setPhotos] = useLocalStorage<string[]>(
+  "love-photos",
+  ["/photos/main.jpg.jpeg"]
+);
   const [current, setCurrent] = useState(0);
   const fileRef = useRef<HTMLInputElement>(null);
 
@@ -468,7 +471,126 @@ type Memory =
   | { type: "text"; content: string; date: string };
 
 function MemoriesPage() {
-  const [memories, setMemories] = useLocalStorage<Memory[]>("love-memories", []);
+  const [memories, setMemories] = useLocalStorage<Memory[]>(
+  "love-memories",
+  [
+    {
+      type: "photo",
+      src: "/photos/pic1.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic2.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic3.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic4.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic5.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic6.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic7.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic8.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic9.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic10.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic11.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic12.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic13.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic14.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic15.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic16.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic17.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic18.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic19.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic20.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic21.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic22.jpg.jpeg",
+      caption: "♥",
+    },
+    {
+      type: "photo",
+      src: "/photos/pic23.jpg.jpeg",
+      caption: "♥",
+    }
+  ]
+);
   const [activeIdx, setActiveIdx] = useState(0);
   const [addMode, setAddMode] = useState<MemType | null>(null);
   const [textDraft, setTextDraft] = useState("");
